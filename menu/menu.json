@@ -36,7 +36,7 @@
         },
                 {
             "id": 6,
-            "name": "alfredo pasta",
+            "name": "arrabiata pasta",
             "price": 250,
             "image": "images/5.jpg"
         }
@@ -56,4 +56,5 @@
             "image": "images/10.jpg"
         }
     ]
+
 }

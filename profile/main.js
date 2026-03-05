@@ -35,6 +35,7 @@ let orders = JSON.parse(localStorage.getItem("order")) || []
 let container = document.getElementById("orders")
 
 function displayOrder() {
+     container.innerHTML = ``
     orders.forEach(order => {
         container.innerHTML = ``
         let itemsHTML = ""
@@ -56,4 +57,5 @@ function displayOrder() {
         i++
     })
 }
+
 console.log(orders)

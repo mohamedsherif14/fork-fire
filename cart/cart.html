@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cart | Fork&Fire</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="../index.html">fork&fire</a></div>
+        <div class="navL">
+            <a href="../menu/menu.html">menu</a>
+            <a href="../contactUs/contactUs.html">contact us</a>
+            <a href="../cart/cart.html">cart</a>
+            <button id="loginp" onclick=" window.location.href ='../login/login.html'" > log in </button>
+            <a href="../profile/profile.html" id="profileI"><i class="fa-solid fa-circle-user"></i></a>
+            <i class="fa-solid fa-arrow-right-from-bracket" id="logout"></i>
+        </div>
+    </header>
+<div class="cart-container">
+
+    <h1>Your Cart</h1>
+
+    <div class="cart-layout">
+
+
+        <div class="cart-items" id="cart-container">
+
+
+        </div>
+
+
+        <div class="cart-summary">
+
+            <div class="summary-row total">
+                <span>Total</span>
+                <span id="Total">890 L.E</span>
+            </div>
+
+            <button class="checkout-btn" onclick="window.location.href ='../checkout/checkout.html'">Proceed to Checkout</button>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="main.js"></script>
+</body>
+</html>

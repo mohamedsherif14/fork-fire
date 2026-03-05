@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="../index.html">fork&fire</a></div>
+        <div class="navL">
+            <a href="../menu/menu.html">menu</a>
+            <a href="../contactUs/contactUs.html">contact us</a>
+            <a href="../cart/cart.html">cart</a>
+            <button id="loginp" onclick=" window.location.href ='../login/login.html'" > log in </button>
+            <a href="../profile/profile.html" id="profileI"><i class="fa-solid fa-circle-user"></i></a>
+            <i class="fa-solid fa-arrow-right-from-bracket" id="logout" onclick="logout()"></i>
+        </div>
+    </header>
+    <section id="daytime">
+        <div class="container">
+            <div class="daytimeitems">
+                <div class="daytime-item">
+                    <img src="images/breckfastIcon.png" alt=" Breakfast">
+                    <h3>Breakfast</h3>
+                    <p>7:00 am To 9:00 am</p>
+                </div>
+            </div>
+        </div>
+        <div class="daytimeitems">
+            <div class="daytime-item">
+                <img src="images/lunchIcon.png" alt=" Lunch">
+                <h3>Lunch</h3>
+                <p>4:00 pm To 7:00 pm</p>
+            </div>
+        </div>
+        </div>
+        <div class="daytimeitems">
+            <div class="daytime-item">
+                <img src="images/dinnerIcon.png" alt=" Dinner">
+                <h3>Dinner</h3>
+                <p>9:00 pm To 12:00 am</p>
+            </div>
+        </div>
+        </div>
+        <div class="daytimeitems">
+            <div class="daytime-item">
+                <img src="images/dessertIcon.png" alt="Dessert ">
+                <h3>Dessert</h3>
+                <p>All day</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <section id="contact">
+        <div class="container">
+            <div class="contact-content">
+
+                <div class="contact-info">
+                    <div>
+                        <h3>INFO</h3>
+                        <p><i class="fa-sharp fa-solid fa-location-dot"></i> 6 October , Egypt</p>
+                        <p><i class="fa-solid fa-phone"></i> Phone:01234567890 </p>
+                        <p><i class="fa-solid fa-envelope"></i>support@forkandfire.com</p>
+                    </div>
+                    <div>
+                        <h3>WORKING HOURS</h3>
+                        <P>8:00 am TO 11:00 pm on weekdays </P>
+                        <P>8:00 am TO 1:00 am on weekends </P>
+                    </div>
+                    <div>
+                        <h3>FLLOW US</h3>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form>
+                    <input type="text" name="Name" id="Name" placeholder="Full Name" required>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                    <textarea name="Massage" id="Massage" cols="30" rows="5" placeholder="Massage"></textarea>
+                    <button type="submit" class="btn ">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+<script src="main.js"></script>
+</body>
+
+</html>

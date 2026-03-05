@@ -1,0 +1,279 @@
+:root {
+    --black: #212121;
+    --orange: #E67514;
+    --wihte: #D3ECCD;
+    --green: #06923E;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Segoe UI', sans-serif;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    transition: 0.5s;
+}
+
+body {
+    background-color: #212121;
+    align-items: center;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--orange);
+    text-decoration: none;
+    flex-wrap: wrap;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+
+.logo a {
+    color: var(--black);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 22px;
+}
+
+
+.navL {
+    text-decoration: none;
+    display: flex;
+    font-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navL a {
+    text-decoration: none;
+    color: var(--black);
+    padding: 0 10px;
+    transition: 0.5S;
+
+}
+
+.navL button {
+    background-color: var(--black);
+    padding: 5px 10px;
+    color: var(--wihte);
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+
+.navL button:hover {
+    transform: scale(1.1);
+    background-color: var(--green);
+    cursor: pointer;
+}
+
+.navL a:hover {
+    transform: scale(1.1);
+    color: var(--wihte);
+}
+
+.navL i:hover {
+    transform: scale(1.1);
+    color: var(--wihte);
+    cursor: pointer;
+}
+
+h1 {
+    color: var(--orange);
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+h2 {
+    color: var(--orange);
+    text-align: center;
+    margin: 20px 50px;
+    font-weight: bold;
+}
+
+.contatnt {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #212121;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    padding: 20px 10px;
+    margin: 25px;
+    width: 21.25em;
+    transition: 0.7s ease;
+    max-width: 100%;
+    border: 5px var(--orange) solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.card button {
+    background-color: var(--orange);
+    border-radius: 20px;
+    padding: 10px;
+    color: var(--wihte);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 60%;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background-color: var(--orange);
+
+    h2 {
+        color: var(--wihte);
+    }
+
+    button {
+        transform: scale(1.1);
+        background-color: var(--wihte);
+        color: var(--black);
+        margin: 5px 5px;
+    }
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 15px;
+    aspect-ratio: 1;
+}
+
+section {
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    display: flex;
+    margin: 20px;
+    padding: 20px 30px;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 15px;
+}
+
+.card p {
+    text-align: center;
+    color: var(--wihte);
+    font-weight: 500;
+    margin: 10px;
+    font-size: 15px;
+}
+
+section a {
+    text-decoration: none;
+}
+
+.price {
+    text-align: center;
+    color: var(--wihte);
+    font-weight: 900;
+
+}
+
+.catg {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: var(--black);
+    box-shadow: 0px 5px 15px 0px #000000;
+    padding: 5px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.catg li {
+    background: none;
+    border: 2px solid var(--orange);
+    border-radius: 30px;
+    padding: 5px 10px;
+    transition: 0.4s;
+    color: var(--wihte);
+    font-weight: normal;
+    list-style: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.catg-button h3 {
+    color: var(--wihte);
+    font-weight: normal;
+}
+
+.catg li.active,
+.catg :hover {
+    scale: 1.1;
+    background-color: var(--orange);
+
+    h3 {
+        color: var(--wihte);
+    }
+}
+
+.search {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+.search-input {
+    background-color: #121212;
+    width: 180px;
+    height: 40px;
+    /* box-shadow: 1px 1px 10px #cfa244; */
+    border-radius: 20px;
+    color: var(--wihte);
+    font-size: 15px;
+    border: 1px solid var(--orange);
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.search-input:focus {
+    outline: 0;
+}
+
+.search box-icon {
+    fill: var(--orange);
+    margin-left: 10px;
+    width: 50px;
+    height: 30px;
+
+}
+
+::placeholder {
+    text-align: center;
+}
+
+.dishes>section:not(:first-child) {
+    display: none;
+}

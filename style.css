@@ -1,0 +1,153 @@
+:root {
+    --black: #212121;
+    --orange: #E67514;
+    --wihte: #D3ECCD;
+    --green: #06923E;
+}
+
+
+
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: var(--black);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--orange);
+    text-decoration: none;
+    flex-wrap: wrap;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+
+.logo a {
+    color: var(--black);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 22px;
+}
+
+
+.navL {
+    text-decoration: none;
+    display: flex;
+    font-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navL a {
+    text-decoration: none;
+    color: var(--black);
+    padding: 0 10px;
+    transition: 0.5S;
+
+}
+.navL button{
+    background-color: var(--black);
+    padding: 5px 10px;
+    color: var(--wihte);
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+    
+}
+.navL button:hover{
+    transform: scale(1.1);
+    background-color: var(--green);
+    cursor: pointer;
+}
+.navL a:hover {
+    transform: scale(1.1);
+    color: var(--wihte);
+}
+
+.mainSec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.mainSec img {
+    width: 40%;
+
+}
+
+.mainp {
+    width: 50%;
+}
+
+.mainp h1 {
+    color: var(--orange);
+    text-transform: capitalize;
+}
+
+.mainp p {
+    color: var(--wihte);
+    margin: 10px 0px;
+}
+
+.mainp button {
+    background-color: var(--orange);
+    padding: 3px 5px;
+    color: var(--wihte);
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+
+.mainp button a {
+    text-decoration: none;
+    color: var(--wihte);
+    text-transform: capitalize;
+    font-weight: bold;
+
+
+}
+
+.mainp button:hover {
+    background-color: var(--green);
+    transform: scale(1.1);
+}
+
+footer{
+    height: 500px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3);
+
+}
+i{
+    transition: 0.5S;
+}
+i:hover{
+    color: var(--wihte);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.profileI{
+    display: none;
+}

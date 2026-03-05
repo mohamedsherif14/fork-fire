@@ -1,0 +1,271 @@
+:root {
+    --black: #212121;
+    --orange: #E67514;
+    --wihte: #D3ECCD;
+    --green: #06923E;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    font-family: "Exo 2", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: var(--black);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--orange);
+    text-decoration: none;
+    flex-wrap: wrap;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+
+.logo a {
+    color: var(--black);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 22px;
+}
+
+
+.navL {
+    text-decoration: none;
+    display: flex;
+    font-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navL a {
+    text-decoration: none;
+    color: var(--black);
+    padding: 0 10px;
+    transition: 0.5S;
+
+}
+
+.navL button {
+    background-color: var(--black);
+    padding: 5px 10px;
+    color: var(--wihte);
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+
+.navL button:hover {
+    transform: scale(1.1);
+    background-color: var(--green);
+    cursor: pointer;
+}
+
+.navL a:hover {
+    transform: scale(1.1);
+    color: var(--wihte);
+}
+
+.navL i {
+    transition: 0.5S;
+    color: var(--black);
+}
+
+.navL i:hover {
+    color: var(--wihte);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.profileI {
+    display: none;
+}
+
+/* .mainSec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.mainSec img {
+    width: 40%;
+
+}
+
+.mainp {
+    width: 50%;
+}
+
+.mainp h1 {
+    color: var(--orange);
+    text-transform: capitalize;
+}
+
+.mainp p {
+    color: var(--wihte);
+    margin: 10px 0px;
+}
+
+.mainp button {
+    background-color: var(--orange);
+    padding: 3px 5px;
+    color: var(--wihte);
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+
+.mainp button a {
+    text-decoration: none;
+    color: var(--wihte);
+    text-transform: capitalize;
+    font-weight: bold;
+
+
+}
+
+.mainp button:hover {
+    background-color: var(--green);
+    transform: scale(1.1);
+}
+
+footer{
+    height: 500px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3);
+
+} */
+
+/* day time start */
+
+#daytime {
+    background: url("./images/orang\ backgrand.webp") center center/cover fixed no-repeat;
+    color: #D3ECCD;
+    text-align: center;
+}
+
+#daytime .daytimeitems {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+}
+
+#daytime .daytimeitems h3 {
+    font-size: 32px;
+    margin: 20px 0 10px;
+}
+
+#daytime .daytimeitems p {
+    font-weight: 500;
+}
+
+/* day time end */
+
+
+/*  contact start */
+
+#contact {
+    padding: 5rem 0;
+    background: #212121;
+    margin-left: 90px;
+}
+
+#contact .container {
+    max-width: 900px;
+}
+
+#contact .contact-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contact .contact-content .contact-info {
+    width: 50%;
+}
+
+#contact .contact-content .contact-info div {
+    margin: 30px 0;
+    line-height: 1.7;
+}
+
+#contact .contact-content .contact-info h3 {
+    font-size: 28px;
+    color: #E67514;
+    margin-bottom: 10px;
+}
+
+#contact .contact-content .contact-info p {
+    color: rgb(238, 238, 238);
+}
+
+#contact .contact-content .contact-info i {
+    color: #E67514;
+    margin-right: 5px;
+}
+
+#contact .contact-content .contact-info a i {
+    color: #D3ECCD;
+    padding: 10px;
+    font-size: 25px;
+}
+
+/* #contact .contact-content .contact-info a i:hover{
+    background: #06923E;
+    color: #ffffff;
+} */
+form {
+    width: 50%;
+}
+
+form input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: #3d3c3c;
+    background-color: #36343477;
+    color: #D3ECCD;
+    border-radius: 5%;
+
+}
+
+#contact .btn {
+    background: #E67514;
+    color: #D3ECCD;
+    cursor: pointer;
+    margin: 15px;
+    padding: 20px;
+    border: none;
+    border-radius: 45%;
+
+}
+
+#contact .btn:hover {
+    background-color: #06923E;
+}
+
+/*  contact ends */

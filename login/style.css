@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --black: #212121;
+    --orange: #E67514;
+    --wihte: #D3ECCD;
+    --green: #06923E;
+}
+
+* {
+    font-family: "Exo 2", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+    background: url(2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.loginBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--black);
+    padding: 20px 20px;
+    border-radius: 20px;
+    margin-right: 60px;
+    height: 600px;
+    width: 40%;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.loginBox h1,
+.loginBox h2 {
+    color: var(--orange);
+    text-transform: capitalize;
+
+
+}
+
+.loginf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+}
+
+.loginf input {
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0px 0px;
+    color: var(--wihte);
+    transition: 0.5s;
+
+}
+
+.loginf input::placeholder {
+    color: var(--wihte);
+    font-weight: bold;
+}
+
+input::-webkit-inner-spin-button {
+    display: none;
+}
+
+.inBox {
+    position: relative;
+    width: 100%;
+    transition: 0.5s;
+    margin-top: 5px;
+}
+
+.inBox i {
+    position: relative;
+    left: 90%;
+    top: 60%;
+    transform: translateY(-55%);
+    color: var(--wihte);
+}
+
+.loginf button {
+    border: none;
+    width: 70%;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--orange);
+    border-radius: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.inBox:focus-within {
+    transform: scale(1.1);
+}
+
+.loginf p {
+    color: var(--wihte);
+    margin: 5px;
+}
+
+.loginf p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--wihte);
+}
+
+.inBox small {
+    position: absolute;
+    left: 10px;
+    bottom: -18px;
+    font-size: 12px;
+    display: none;
+}

@@ -1,0 +1,59 @@
+{
+    "Starters": [
+        {
+            "id": 1,
+            "name": "onion rings",
+            "price": 100,
+            "image": "images/1.jpg"
+        },
+                {
+            "id": 2,
+            "name": "Mozzarella Sticks",
+            "price": 100,
+            "image": "images/2.jpg"
+        }
+    ],
+    "Mains": [
+        {
+            "id": 3,
+            "name": "beef fillet",
+            "price": 350,
+            "image": "images/3.jpg"
+        },
+                {
+            "id": 4,
+            "name": "cordon bleu",
+            "price": 300,
+            "image": "images/4.jpg"
+        }
+    ],
+    "PastaBowls": [
+        {
+            "id": 5,
+            "name": "alfredo pasta",
+            "price": 250,
+            "image": "images/6.jpg"
+        },
+                {
+            "id": 6,
+            "name": "alfredo pasta",
+            "price": 250,
+            "image": "images/5.jpg"
+        }
+    ],
+
+        "Drinks": [
+        {
+            "id": 9,
+            "name": "soft drink",
+            "price": 120,
+            "image": "images/9.jpg"
+        },
+                {
+            "id": 10,
+            "name": "water",
+            "price": 80,
+            "image": "images/10.jpg"
+        }
+    ]
+}

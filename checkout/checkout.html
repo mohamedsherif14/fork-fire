@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Fork&Fire</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="../index.html">fork&fire</a></div>
+        <div class="navL">
+            <a href="../menu/menu.html">menu</a>
+            <a href="../contactUs/contactUs.html">contact us</a>
+            <a href="../cart/cart.html">cart</a>
+            <button id="loginp" onclick=" window.location.href ='../login/login.html'"> log in </button>
+            <a href="../profile/profile.html" id="profileI"><i class="fa-solid fa-circle-user"></i></a>
+            <i class="fa-solid fa-arrow-right-from-bracket" id="logout"></i>
+        </div>
+    </header>
+    <div class="checkout-container">
+
+        <h1>Checkout</h1>
+
+        <div class="checkout-layout">
+
+
+            <div class="checkout-form">
+                <h2>Billing Details</h2>
+                <form action="" id="myform">
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter your name" id="namein">
+                        <small></small>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Phone</label>
+                        <input type="number" placeholder="Enter phone number" id="numberin">
+                        <small></small>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Address</label>
+                        <input type="text" placeholder="address" id="addin">
+                        <small></small>
+                    </div>
+
+
+            </div>
+            </form>
+
+            <div class="checkout-summary" id="checkout-summary">
+
+                <h2>Order Summary</h2>
+                <div id="items">
+                    <div class="summary-item">
+                        <span>Steak Burger x1</span>
+                        <span>250 L.E</span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Chicken Pizza x2</span>
+                        <span>600 L.E</span>
+                    </div>
+                </div>
+
+
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span id="Total">890 L.E</span>
+                </div>
+
+                <button class="place-order" onclick="clickOrder()">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    Place Order
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

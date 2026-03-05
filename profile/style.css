@@ -1,0 +1,198 @@
+:root {
+    --black: #212121;
+    --orange: #E67514;
+    --white: #D3ECCD;
+    --green: #06923E;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--orange);
+    text-decoration: none;
+    flex-wrap: wrap;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+
+.logo a {
+    color: var(--black);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 22px;
+}
+
+
+.navL {
+    text-decoration: none;
+    display: flex;
+    font-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navL a {
+    text-decoration: none;
+    color: var(--black);
+    padding: 0 10px;
+    transition: 0.5S;
+
+}
+.navL button{
+    background-color: var(--black);
+    padding: 5px 10px;
+    color: var(--wihte);
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+    
+}
+.navL button:hover{
+    transform: scale(1.1);
+    background-color: var(--green);
+    cursor: pointer;
+}
+.navL a:hover {
+    transform: scale(1.1);
+    color: var(--wihte);
+}
+
+.navL i{
+    transition: 0.5S;
+    color: var(--black);
+}
+.navL  i:hover{
+    color: var(--wihte);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.profileI{
+    display: none;
+}
+
+
+body{
+    background: var(--black);
+    color: var(--white);
+}
+
+/* ===== Layout ===== */
+
+.profile-layout{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ===== Sidebar ===== */
+
+.sidebar{
+    width:300px;
+    background:#1a1a1a;
+    padding:40px 20px;
+    text-align:center;
+    border-right:2px solid var(--orange);
+}
+
+.profile-img{
+    font-size:90px;
+    color:var(--orange);
+    margin-bottom:15px;
+}
+
+.sidebar h2{
+    margin-bottom:5px;
+}
+
+.sidebar p{
+    font-size:14px;
+    opacity:0.7;
+    margin-bottom:30px;
+}
+
+.profile-menu{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.profile-menu button{
+    padding:12px;
+    border:none;
+    background:#2a2a2a;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+    text-align:left;
+}
+
+.profile-menu button i{
+    margin-right:10px;
+}
+
+.profile-menu button:hover,
+.profile-menu .active{
+    background:var(--orange);
+}
+
+.logout{
+    margin-top:30px;
+    background:#400;
+}
+
+/* ===== Main Content ===== */
+
+.main-content{
+    flex:1;
+    padding:50px;
+}
+
+.main-content h1{
+    margin-bottom:30px;
+    color:var(--orange);
+}
+
+/* Orders */
+
+.orders{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.order-card{
+    background:#1e1e1e;
+    padding:20px;
+    border-radius:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    transition:0.3s;
+    border-left:5px solid var(--orange);
+}
+
+.order-card:hover{
+    transform:translateX(10px);
+}
+
+.price{
+    font-weight:bold;
+    color:var(--orange);
+}
+
+
